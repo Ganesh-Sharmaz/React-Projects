@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign Up</title>
+    <style>
+        .page {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+        }
+
+        /* Media query for phones */
+        @media screen and (max-width: 480px) {
+            .page {
+                max-width: 100%;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loginPage" class="page">
+        <h1>Login Page</h1>
+        <form id="loginForm">
+            <div>
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" placeholder="Enter Username...">
+            </div>
+            <br>
+            <div>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" placeholder="Enter Email...">
+            </div>
+            <br>
+            <div>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Enter Password...">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
+    </div>
+
+    <div id="signupPage" style="display: none;">
+        <h1>Sign Up Page</h1>
+        <form id="signupForm">
+            <div>
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="username" placeholder="Enter Username...">
+            </div>
+            <br>
+            <div>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="email" placeholder="Enter Email...">
+            </div> 
+            <br>
+            <div>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="password" placeholder="Enter Password...">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <p>Already have an account? <a href="#" id="loginLink">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

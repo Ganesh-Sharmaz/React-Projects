@@ -1,10 +1,10 @@
-let form = document.getElementById('myForm');
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('myForm');
 
-form.addEventListener("submit", function(e) {
-
-    e.preventDefault();
-    let formData = new FormData(e.target);
-    let formObj = Object.fromEntries(formData)
-    console.log(formObj)
-
-})
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const formObj = Object.fromEntries(formData);
+        console.log(formObj);
+    });
+});
